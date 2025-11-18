@@ -6,6 +6,7 @@
 // @author       hqwuzhaoyi
 // @license      MIT; https://opensource.org/licenses/MIT
 // @match        https://web.amh-group.com:8080/*
+// @match        http://web.amh-group.com:8080/*
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
@@ -15,7 +16,9 @@
 
     function injectMock() {
         const script = document.createElement('script');
-        script.src = 'https://localhost:3366/mock.js';
+        // 根据当前页面协议选择对应的 mock.js URL
+        const isHttps = window.location.protocol === 'https:';
+        script.src = isHttps ? 'https://localhost:3366/mock.js' : 'http://localhost:3354/mock.js';
         script.type = 'text/javascript';
         script.async = false; // 尽量保证按顺序执行
 

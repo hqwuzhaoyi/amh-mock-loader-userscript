@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         AMH Mock Loader
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/hqwuzhaoyi/amh-mock-loader-userscript
 // @version      0.1
 // @description  在 AMH 内网页面自动加载本地 mock.js
-// @author       you
+// @author       hqwuzhaoyi
+// @license      MIT
 // @match        https://web.amh-group.com:8080/*
 // @run-at       document-start
 // @grant        none

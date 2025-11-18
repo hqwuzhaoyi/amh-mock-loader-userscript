@@ -1,12 +1,16 @@
 // ==UserScript==
 // @name         AMH Mock Loader
 // @namespace    https://github.com/hqwuzhaoyi/amh-mock-loader-userscript
-// @version      0.1
+// @version      0.2
 // @description  在 AMH 内网页面自动加载本地 mock.js
 // @author       hqwuzhaoyi
 // @license      MIT; https://opensource.org/licenses/MIT
 // @match        https://web.amh-group.com:8080/*
 // @match        http://web.amh-group.com:8080/*
+// @match        https://web.amh-group.com:3000/*
+// @match        http://web.amh-group.com:3000/*
+// @match        https://web.amh-group.com:10088/*
+// @match        http://web.amh-group.com:10088/*
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
